@@ -37,5 +37,16 @@ namespace P620223_JurgenGranados.Formularios
         {
             TxtContrasennia.UseSystemPasswordChar = true;
         }
+
+        private void BtnIngresar_Click(object sender, EventArgs e)
+        {
+            //TO DO: Se debe validar el ingreso del usuario 
+
+            //Si la validacion es correcta permite el ingreso al sistema
+            //y muestre el formulario principal.
+
+            Globales.MiFormPrincipal.Show();
+            this.Hide();
+        }
     }
 }

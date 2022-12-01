@@ -16,5 +16,14 @@ namespace P620223_JurgenGranados.Formularios
         {
             InitializeComponent();
         }
+
+        private void FrmUsuariosGestion_Load(object sender, EventArgs e)
+        {
+            //establecer como padre el formulario principal, de forma que se anide dentro del mismo
+
+            MdiParent = Globales.MiFormPrincipal;
+
+
+        }
     }
 }
