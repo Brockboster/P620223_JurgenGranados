@@ -16,6 +16,16 @@ namespace Logica.Models
         public DataTable Listar()
         {
             DataTable R = new DataTable();
+            //paso 2.1 y 2.2 de Seq Usuario Rol Listar
+
+            Conexion MiCnn = new Conexion();
+
+            //paso 2.3 y 2.4
+            //No es necesario expliacar los pasos dentro de Ejecutar Select 
+            //Ya que como se va a usar tantas veces no se veria bien explicarlo
+
+            R = MiCnn.EjecutarSelect("SPUsuarioRolListar");
+
 
 
             return R;
